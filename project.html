@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>慕课网</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class="top-box">
+        <div id="top-content">
+            <!-- 左边 -->
+            <div class="top-left">
+                <div id="login">亲,请登录</div>
+                <div id="register">免费注册</div>
+                <div>手机逛慕淘</div>
+            </div>
+            <!-- 右边 -->
+            <div class="top-right">
+                <div class="top-right-text top-text0">
+                    我的慕淘
+                    <img src="素材/icon/21.png">
+                    <div class="launch-item launch-item0">
+                        <div>已买到的宝贝</div>
+                        <div>我的足迹</div>
+                    </div>
+                </div>
+                <div class="top-right-text top-text1">
+                    收藏夹
+                    <img src="素材/icon/21.png">
+                    <div class="launch-item launch-item1">
+                        <div>收藏的宝贝</div>
+                        <div>收藏的店铺</div>
+                    </div>
+                </div>
+                <div class="top-right-text top-text2">
+                    商品分类
+                </div>
+                <div class="top-right-text top-text3">
+                    卖家中心
+                    <img src="素材/icon/21.png">
+                    <div class="launch-item launch-item3">
+                        <div>免费开店</div>
+                        <div>已卖出的宝贝</div>
+                        <div>出售中的宝贝</div>
+                        <div>卖家服务市场</div>
+                        <div>卖家培训中心</div>
+                        <div>体验中心</div>
+                    </div>
+                </div>
+                <div class="top-right-text top-text4">
+                    联系客服
+                    <img src="素材/icon/21.png">
+                    <div class="launch-item launch-item4">
+                        <div>消费者客服</div>
+                        <div>卖家客服</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 清除float -->
+        <div class="clearFloat"></div>
+    </div>
+    <!-- 登录页 -->
+    <div>
+        <!-- 遮罩层 -->
+        <div class="layer-mask"></div>
+        <!-- 弹出窗口 -->
+        <div class="layer-window">
+            <div class="layer-title">
+                <div class="login-text">登录</div>
+                <div class="register-text">注册</div>
+                <img class="closeButton" src="素材/icon/20.png">
+            </div>
+            <!-- 弹出层内容 -->
+            <div class="layer-content"></div>
+            <div class="layer-img">
+                <img src="素材/icon/QQ.png"/>
+                <img src="素材/icon/weixin.png"/>
+                <img src="素材/icon/xinlang.png"/>
+            </div>
+        </div>
+        <!-- 弹出层里的内容 登录-->
+        <div class="loginContent">
+            <input type="text" name="username" class="username" placeholder="请输入登录邮箱/手机号">
+            <div class="username-tips">&nbsp;</div>
+            <input type="password" name="paw" class="paw" placeholder="6-16位密码，区分大小写，不能用空格">
+            <div class="paw-tips">&nbsp;</div>
+            <div class="autoLogin">
+                <input type="checkbox" name="autoLogin" checked
+                    value="loginSucceed">
+                <span>下次自动登录</span>
+                <span class="forgetPaw">忘记密码</span>
+            </div>
+            <button type="button" class="loginButton">登录</button>
+        </div>
+        <!-- 弹出层里的内容 注册-->
+        <div class="registerContent">
+            <input type="text" name="reg-username" class="reg-username" placeholder="请输入登录邮箱/手机号">
+            <div class="reg-username-tips">&nbsp;</div>
+            <div class="reg-second">
+                <input type="text" name="code" class="code" placeholder="请输入验证码">
+                <img src="素材/verify.png" alt="验证码" class="codeImg">
+            </div>
+            <div class="code-tips">&nbsp;</div>
+            <button type="button" class="registerButton">注册</button>
+        </div>
+    </div>
+    <!-- logo区 -->
+    <div class="logoBox">
+        <div class="logoContent">
+            <!-- logo图 -->
+            <img src="素材/logo.png" alt="logo图" class="logoImg">
+            <input type="text" name="search" class="searchInput" placeholder="灵魂美食一元抢">
+            <button type="button" class="searchButton">搜索</button>
+            <!-- 购物车 -->
+            <div class="shoppingCar">
+                <div class="shoppingContentTop">
+                    <img src="素材/icon/26.png" alt="购物车" class="shoppingImg">
+                    <span>购物车&nbsp; &nbsp;&nbsp;&nbsp;0</span>
+                    <div class="vertical-line">|</div>
+                    <img src="素材/icon/23.png" class="shoppingImg2">
+                </div>
+                <div class="shoppingContent" >
+                        <div class="shopping-text0">最新加入的商品</div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/1.png" class="shopping-item-img">
+                            <div class="shopping-text1">阿迪达斯 训练 男子</div>
+                            <div class="shopping-text2">￥335*1</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/2.png" class="shopping-item-img">
+                            <div class="shopping-text1">玉兰油多效修护三部曲套装</div>
+                            <div class="shopping-text2">￥119*2</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/3.png" class="shopping-item-img">
+                            <div class="shopping-text1">Apple iPhone7(A1660)</div>
+                            <div class="shopping-text2">￥6188*1</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/4.png" class="shopping-item-img">
+                            <div class="shopping-text1">飞利浦面条机 HR2536/31</div>
+                            <div class="shopping-text2">￥659*4</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/5.png" class="shopping-item-img">
+                            <div class="shopping-text1">罗技G29力反馈游戏方向</div>
+                            <div class="shopping-text2">￥2999*1</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/1.png" class="shopping-item-img">
+                            <div class="shopping-text1">阿迪达斯 训练 男子</div>
+                            <div class="shopping-text2">￥335*1</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/2.png" class="shopping-item-img">
+                            <div class="shopping-text1">玉兰油多效修护三部曲套装</div>
+                            <div class="shopping-text2">￥119*2</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/3.png" class="shopping-item-img">
+                            <div class="shopping-text1">Apple iPhone7(A1660)</div>
+                            <div class="shopping-text2">￥6188*1</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/4.png" class="shopping-item-img">
+                            <div class="shopping-text1">飞利浦面条机 HR2536/31</div>
+                            <div class="shopping-text2">￥659*4</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                        <div class="shopping-box">
+                            <img src="素材/cart/5.png" class="shopping-item-img">
+                            <div class="shopping-text1">罗技G29力反馈游戏方向</div>
+                            <div class="shopping-text2">￥2999*1</div>
+                            <img src="素材/icon/20.png" class="delete-item-img">
+                        </div>
+                </div>
+                <div class="shoppingContentBottom">
+                    <div>共计27件商品  ￥0.00</div>
+                    <button type="button" class="gotoShopingButton">去购物车</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 导航图 -->
+    <div class="navBox">
+        <div class="navContent">
+            <ul class="navUl">
+                <li>数码城</li>
+                <li>天黑黑</li>
+                <li>团购</li>
+                <li>发现</li>
+                <li>二手特价</li>
+                <li>名品汇</li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner区 -->
+    <div class="bannerBox">
+        <!-- banner区左边 -->
+        <div class="banner-left-top">
+            <img src="素材/icon/18.png">
+            <div class="banner-left-top-text">商品分类</div>
+        </div>
+        <div class="banner-left">
+            <!-- 主菜单栏 -->
+            <div>
+                <div class="banner-item-title">家用电器
+                <span>&gt;</span></div>
+                <div class="banner-item-title">手机、运营商、数码
+                <span>&gt;</span></div>
+                <div class="banner-item-title">电脑、办公<span>&gt;</span></div>
+                <div class="banner-item-title">家居、家具、家装、厨具
+                <span>&gt;</span></div>
+                <div class="banner-item-title">男装、女装、童装、内衣
+                <span>&gt;</span></div>
+                <div class="banner-item-title">化妆、清洁、宠物<span>&gt;</span></div>
+                <div class="banner-item-title">运动户外、钟表<span>&gt;</span></div>
+                <div class="banner-item-title">汽车、汽车用品<span>&gt;</span></div>
+                <div class="banner-item-title">母婴、玩具乐器<span>&gt;</span></div>
+                <div class="banner-item-title">食品、酒类、生鲜、特产
+                <span>&gt;</span></div>
+                <div class="banner-item-title">医药保健<span>&gt;</span></div>
+                <div class="banner-item-title">图书、音像、电子书
+                <span>&gt;</span></div>
+                <div class="banner-item-title">彩票、旅行、充值、票务
+                <span>&gt;</span></div>
+                <div class="banner-item-title">理财、众筹、白条、保险
+                <span>&gt;</span></div>
+            </div>
+            <!-- 子菜单栏 -->
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">电器</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">冰箱</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">洗衣机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电脑</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">微波炉</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">开水壶</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">吹风机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">缝纫机</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-item-box">
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机通讯</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机</li>
+                            <li>对讲机</li>
+                            <li>以旧换新</li>
+                            <li>手机维修</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">运营商</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>充话费/流量</li>
+                            <li>170选号</li>
+                            <li>合约机</li>
+                            <li>办套餐</li>
+                            <li>选号码</li>
+                            <li>固话宽带</li>
+                            <li>京东通信</li>
+                            <li>中国移动</li>
+                            <li>中国联通</li>
+                            <li>中国电信</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">手机配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>手机壳</li>
+                            <li>贴膜</li>
+                            <li>手机存储卡</li>
+                            <li>数据线</li>
+                            <li>充电器</li>
+                            <li>手机耳机</li>
+                            <li>创意配件</li>
+                            <li>手机饰品</li>
+                            <li>手机电池</li>
+                            <li>苹果周边</li>
+                            <li>移动电源</li>
+                            <li>蓝牙耳机</li>
+                            <li>手机支架</li>
+                            <li>车载配件</li>
+                            <li>拍照配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">摄影摄像</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>数码相机</li>
+                            <li>单电/微电相机</li>
+                            <li>单反相机</li>
+                            <li>拍立得</li>
+                            <li>运动相机</li>
+                            <li>摄像机</li>
+                            <li>镜头</li>
+                            <li>户外器材</li>
+                            <li>影视器材</li>
+                            <li>冲印服务</li>
+                            <li>数码相框</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">数码配件</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>存储卡</li>
+                            <li>三脚架/云台</li>
+                            <li>相机包</li>
+                            <li>滤镜</li>
+                            <li>闪光灯/手柄</li>
+                            <li>相机清洁/贴膜</li>
+                            <li>机身附件</li>
+                            <li>镜头附件</li>
+                            <li>读卡器</li>
+                            <li>支架</li>
+                            <li>电池/充电器</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">影音娱乐</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>耳机/耳麦</li>
+                            <li>音箱/音响</li>
+                            <li>便携/无线音箱</li>
+                            <li>收音机</li>
+                            <li>麦克风</li>
+                            <li>MP3/MP4</li>
+                            <li>专业音频</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">智能设备</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>智能手环</li>
+                            <li>智能手表</li>
+                            <li>智能眼镜</li>
+                            <li>智能机器人</li>
+                            <li>运动跟踪器</li>
+                            <li>健康监测</li>
+                            <li>智能配饰</li>
+                            <li>智能家居</li>
+                            <li>无人车</li>
+                            <li>其他配件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-text0">电子教育</div>
+                    <div class="sub-item-text1">|</div>
+                    <div class="sub-item-in">
+                        <ul>
+                            <li>学生平板</li>
+                            <li>点读机/笔</li>
+                            <li>早教益智</li>
+                            <li>录音笔</li>
+                            <li>电纸书</li>
+                            <li>电子词典</li>
+                            <li>复读机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner区中间 -->
+        <div class="banner-center">
+            <img src="素材/focus-carousel/1.png"  class="bannerImg banner-active" />
+            <img src="素材/focus-carousel/1.jpg"  class="bannerImg" />
+            <img src="素材/focus-carousel/2.jpg"  class="bannerImg" />
+            <img src="素材/focus-carousel/3.jpg"  class="bannerImg" />
+            <img src="素材/focus-carousel/4.jpg"  class="bannerImg" />
+            <div class="next-banner-box">
+            </div>
+            <div class="pre-banner-box">
+            </div>
+            <div class="dots">
+                <span class="dots-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="banner-right-top">
+                <div class="banner-right-text0">
+                    <div class="banner-right-text0-1">慕快报</div>
+                    <div class="banner-right-text0-2">更多&gt;</div>
+                </div>
+                <div class="banner-right-text">
+                    <div class="banner-right-text1">[特惠]</div>
+                    <div class="banner-right-text2">精选图书每满150减50</div>
+                </div>
+                <div class="banner-right-text">
+                    <div class="banner-right-text1">[公告]</div>
+                    <div class="banner-right-text2">因广州图书仓搬仓升级配送延迟</div>
+                </div>
+                <div class="banner-right-text">
+                    <div class="banner-right-text1">[特惠]</div>
+                    <div class="banner-right-text2">爆款手机12期免息 抽奖赢电视</div>
+                </div>
+                <div class="banner-right-text">
+                    <div class="banner-right-text1">[公告]</div>
+                    <div class="banner-right-text2">广东、福建受台风影响配送延迟</div>
+                </div>
+                <div class="banner-right-text">
+                    <div class="banner-right-text1">[特惠]</div>
+                    <div class="banner-right-text2">大闸蟹领券满399减180</div>
+                </div>
+            </div>
+            <div class="banner-right-middle">
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/1.png">
+                    <div>话费</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/2.png">
+                    <div>机票</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/3.png">
+                    <div>电影票</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/4.png">
+                    <div>游戏</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/5.png">
+                    <div>彩票</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/6.png">
+                    <div>加油卡</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/7.png">
+                    <div>酒店</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/8.png">
+                    <div>火车票</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/9.png">
+                    <div>众筹</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/10.png">
+                    <div>理财</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/11.png">
+                    <div>礼品卡</div>
+                </div>
+                <div class="banner-right-middle-img">
+                    <img src="素材/icon/12.png">
+                    <div>白条</div>
+                </div>
+            </div>
+            <div class="banner-right-bottom">
+                <img src="素材/ad.png">
+            </div>
+        </div>
+    </div>
+    <!-- 楼层区 -->
+    <div class="floorBox">
+        <div class="floorContent">
+            <div class="floor">
+                <div class="floor-title">
+                    <div class="floor-icon" id="floor-1">1F</div>
+                    <div class="floor-text">服装鞋包</div>
+                    <div class="floor-classification">
+                        <div class="classification classification1">大牌
+                            <img src="素材/floor-arrow.png" class="floor-arrow1">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">男装
+                            <img src="素材/floor-arrow.png" class="floor-arrow2">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">女装
+                            <img src="素材/floor-arrow.png" class="floor-arrow3">
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-content floor-content-active">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/2.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/2.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/3.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/3.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/4.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="floor-title">
+                    <div class="floor-icon" id="floor-2">2F</div>
+                    <div class="floor-text">个护美妆</div>
+                    <div class="floor-classification">
+                        <div class="classification classification1">热门
+                            <img src="素材/floor-arrow.png" class="floor-arrow1">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">国际大牌
+                            <img src="素材/floor-arrow.png" class="floor-arrow2">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">国际名品
+                            <img src="素材/floor-arrow.png" class="floor-arrow3">
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-content floor-content-active">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/5.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/5.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/5.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/5.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/5.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/5.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/1.png">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/4.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="floor-title">
+                    <div class="floor-icon" id="floor-3">3F</div>
+                    <div class="floor-text">手机通讯</div>
+                    <div class="floor-classification">
+                        <div class="classification classification1">热门
+                            <img src="素材/floor-arrow.png" class="floor-arrow1">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">品质优选
+                            <img src="素材/floor-arrow.png" class="floor-arrow2">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">新机尝试
+                            <img src="素材/floor-arrow.png" class="floor-arrow3">
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-content floor-content-active">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="floor-title">
+                    <div class="floor-icon" id="floor-4">4F</div>
+                    <div class="floor-text">家用电器</div>
+                    <div class="floor-classification">
+                        <div class="classification classification1">热门
+                            <img src="素材/floor-arrow.png" class="floor-arrow1">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">大家电
+                            <img src="素材/floor-arrow.png" class="floor-arrow2">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">生活电器
+                            <img src="素材/floor-arrow.png" class="floor-arrow3">
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-content floor-content-active">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="floor-title">
+                    <div class="floor-icon" id="floor-5">5F</div>
+                    <div class="floor-text">电脑数码</div>
+                    <div class="floor-classification">
+                        <div class="classification classification1">热门
+                            <img src="素材/floor-arrow.png" class="floor-arrow1">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">电脑/平板
+                            <img src="素材/floor-arrow.png" class="floor-arrow2">
+                        </div>
+                        <div>|</div>
+                        <div class="classification">潮流影音
+                            <img src="素材/floor-arrow.png" class="floor-arrow3">
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-content floor-content-active">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <div class="floor-item-box">
+                        <img src="素材/floor/9.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                    <!-- 清除浮动 -->
+                    <div class="clearFloat"></div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/7.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+                <div class="floor-content">
+                    <div class="floor-item-box">
+                        <img src="素材/floor/8.jpg">
+                        <div>匡威男棒球开衫外套2015</div>
+                        <div class="floor-item-money">￥479</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floor-nav-box">
+            <div class="floor-nav">
+                <div class="floor-nav-text floor-nav-text1">服装</div>
+                <div class="floor-nav-text floor-nav-text2">2F</div>
+                <div class="floor-nav-text floor-nav-text3">3F</div>
+                <div class="floor-nav-text floor-nav-text4">4F</div>
+                <div class="floor-nav-text floor-nav-text5">5F</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 友情链接区 -->
+    <div class="linkBox">
+        <div class="linkContent">
+            <!-- 友情链接区的横线 -->
+            <div class="link-line"></div>
+            <!-- 友情链接区内容 -->
+            <div class="link-text">
+                <div class="link-item-title">消费者保障</div>
+                <div class="link-item">保障范围</div>
+                <div class="link-item">退货退款流程</div>
+                <div class="link-item">服务中心</div>
+                <div class="link-item">更多特色服务</div>
+            </div>
+            <div class="link-text">
+                <div class="link-item-title">新手上路</div>
+                <div class="link-item">新手专区</div>
+                <div class="link-item">消费警示</div>
+                <div class="link-item">交易安全</div>
+                <div class="link-item">24小时在线帮助</div>
+                <div class="link-item">免费开店</div>
+            </div>
+            <div class="link-text">
+                <div class="link-item-title">付款方式</div>
+                <div class="link-item">快捷支付</div>
+                <div class="link-item">信用卡</div>
+                <div class="link-item">余额宝</div>
+                <div class="link-item">微信支付</div>
+                <div class="link-item">货到付款</div>
+            </div>
+            <div class="link-text">
+                <div class="link-item-title">慕淘特色</div>
+                <div class="link-item">手机慕淘</div>
+                <div class="link-item">慕淘信</div>
+                <div class="link-item">大众评审</div>
+                <div class="link-item">B格指南</div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚区 -->
+    <div class="footerBox">
+        <div class="footerContent">
+            <div class="footer-text">关于慕淘</div>
+            <div class="footer-text">合作伙伴</div>
+            <div class="footer-text">营销中心</div>
+            <div class="footer-text">廉正举报</div>
+            <div class="footer-text">联系客服</div>
+            <div class="footer-text">开放平台</div>
+            <div class="footer-text">诚征英才</div>
+            <div class="footer-text">联系我们</div>
+            <div class="footer-text">网站地图</div>
+            <div class="footer-text">法律声明</div>
+            <div class="footer-text">知识产权</div>
+            <div class="footer-text-final">© 2017 imooc.com  京ICP备 13046642号-2</div>
+        </div>
+    </div>
+    <!-- 右侧导航 -->
+    <div class="right-nav-box">
+        <div class="right-nav">
+            <img src="素材/icon/13.png">
+            <div class="right-nav-text">会员</div>
+        </div>
+        <div class="right-nav">
+            <img src="素材/icon/14.png">
+            <div class="right-nav-text">购物车</div>
+        </div>
+        <div class="right-nav">
+            <img src="素材/icon/15.png">
+            <div class="right-nav-text">我的关注</div>
+        </div>
+        <div class="right-nav">
+            <img src="素材/icon/16.png">
+            <div class="right-nav-text">我的信息</div>
+        </div>
+        <div class="right-nav">
+            <img src="素材/icon/17.png" class="return-top">
+            <div class="right-nav-text">回到顶部</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
